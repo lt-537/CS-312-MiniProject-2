@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+<body class="recipe-body">
+    <div class="drinks">
+        <div class="image-container">
+            <img src="<%= image %>" alt="<%= drink %> cocktail" class="recipe-img" width="600" height="750">
+        </div>
+
+        <div class="drink-info">
+            <p class="drink-title">
+                <%= drink %>
+            </p>
+
+            <div class="drink-type-container">
+                <p class="drink-type">
+                    <%= type %>
+                </p>
+            </div>
+            <div class="ingredient-section">
+                <div class="drink-ingred-container">
+                    <p class="drink-ingred">Ingredients</p>
+                        <% for(i = 0; i < ingredients_list.length; i++) { %>
+                            <p class="ingred-list">
+                                <span class="name"><%= ingredients_list[i] %></span>
+                                <span class="measure"><%= measurement_list[i]%></span>
+                            </p>
+                        <%}%>
+                </div>
+
+                <div class="drink-instr-container">
+                    <p class="drink-prep">How to prepare</p>
+                        <p class="drink-instr">
+                            <%= drink_instructions %>
+                        </p>
+                </div>
+            </div>
+            <div class="recipe-buttons-container">
+                <div>
+                    <a class="recipe-button" href="/get_recipe">Get another drink!</a>
+                </div>
+                <div>
+                    <a class="home-button" href="/">Back to Homepage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

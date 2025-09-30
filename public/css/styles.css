@@ -1,0 +1,160 @@
+/*Homepage styling*/
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-body{
+    background-color: #0F1216;
+}
+
+.homepage-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.roulette-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;
+    padding: 40px;
+    width: 50%;
+}
+
+.main-intro{
+    color: #E8EDF2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main-title{
+    color:#8B95A1;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.main-desc{
+    color: #E8EDF2;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.main-button{
+    display:inline-block; 
+    color:#FF6B6B; 
+    border-radius:8px;
+}
+
+.img-header{
+    margin: auto;
+
+}
+
+.main-img{
+    max-width: min(90vw, 1000px);
+    margin-top: 30px;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+
+}
+
+/*recipe styling*/
+.recipe-body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: url(/images/recipe-cocktail.png) right center / cover no-repeat;
+}
+.drinks{
+    display: flex;
+    align-items: center; 
+    gap: 26px;
+    width: min(60%, 900px);   
+    padding: 20px;
+    background-color: #171B21 ;
+    border-radius: 20px;
+}
+
+.image-container{
+    margin: 10px;
+}
+
+.recipe-img{
+    width: 300px;             
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.drink-title{
+    font-size: 70px;
+    color:#FF6B6B; 
+}
+
+.drink-type{
+    color: #A8B2BE;
+    font-size: 25px;
+}
+
+.ingredient-section{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: start;
+    gap: 20px;
+}
+
+.drink-instr-container{
+    min-width: 0; 
+}
+
+.drink-ingred{
+    color: #FF6B6B;
+    font-size: 20px;
+}
+
+.ingred-list{
+    color: #E8EDF2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 12px;
+    margin: 6px 0;
+}
+
+.ingred-list .name{
+    overflow-wrap: anywhere;
+}
+
+.ingred-list .measure{
+    white-space: nowrap;     
+    justify-self: end;
+}
+
+.drink-prep{
+    color: #FF6B6B;
+    font-size: 20px;
+}
+
+.drink-instr{
+    color: #E8EDF2;
+}
+
+.recipe-buttons-container{
+    display: grid;
+    grid-template-columns: max-content;
+    align-items: start;
+    gap: 20px;
+}
+.recipe-button{
+    display:inline-block; 
+    color:#FF6B6B; 
+    border-radius:8px;
+}
+
+.home-button{
+    display:inline-block;
+    color:#FF6B6B; 
+    border-radius:8px;
+}
+
